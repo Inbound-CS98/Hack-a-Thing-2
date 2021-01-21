@@ -6,6 +6,8 @@
   "author": "Justin Baltazar <justin.t.baltazar.21@dartmouth.edu>",
   "license": "MIT",
   "scripts": {
+    "rimraf": "./node_modules/rimraf/bin.js",
+    "webpack": "./node_modules/webpack/bin/webpack.js",
     "start": "NODE_ENV=development webpack-dev-server",
     "test": "eslint src/**.js && jest",
     "build": "yarn clean; NODE_ENV=production webpack --colors",
