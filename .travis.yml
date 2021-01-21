@@ -2,12 +2,13 @@ language: node_js
 node_js:
   - "13.12.0"
 install:
-  - yarn --ignore-engines
+  - yarn
 script:
   - yarn test
 
 deploy:
   provider: script
   script: yarn deploy
+  skip_cleanup: true
   on: 
     branch: master
