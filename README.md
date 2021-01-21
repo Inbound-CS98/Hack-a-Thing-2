@@ -1,6 +1,8 @@
 # Inbound
 ### Hack a Thing 2: Frontend
 
+Link to live site: http://inbound-cs98-hack-a-thing-2.surge.sh
+
 ## Installation
 
 - To install, run `yarn`
