@@ -16,10 +16,8 @@ module.exports = {
   resolve: {
     extensions: ['.js'],
     alias: {
-      actions: path.resolve(__dirname, 'src/actions'),
       components: path.resolve(__dirname, 'src/components'),
       pages: path.resolve(__dirname, 'src/pages'),
-      reducers: path.resolve(__dirname, 'src/reducers'),
       routers: path.resolve(__dirname, 'src/routers'),
     },
   },
