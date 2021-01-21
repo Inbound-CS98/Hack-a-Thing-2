@@ -47,6 +47,6 @@
         }
     },
     "settings": {
-        "import/resolver": "webpack",
+        "import/resolver": "webpack"
     }
 }
