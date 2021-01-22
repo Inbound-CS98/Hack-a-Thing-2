@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 
 import * as style from './AComponent.scss';
 
+// test comment
+
 const TestButton = (props) => {
   const [isClicked, setIsClicked] = useState(true);
 
