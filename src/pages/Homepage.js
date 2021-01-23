@@ -9,11 +9,9 @@ import TalkAPI from 'components/TalkAPI';
 // https://devhints.io/js-fetch
 
 const getUrl = 'http://localhost:9090/api/ping';
-
 fetch(getUrl).then(response => response.json()).then(data => console.log(data));
 
 const postUrl = 'http://localhost:9090/post';
-
 fetch(postUrl, {
   method: 'POST',
   headers: {
