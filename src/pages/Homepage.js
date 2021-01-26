@@ -8,8 +8,10 @@ import TalkAPI from 'components/TalkAPI';
 // Fetch cheatsheet
 // https://devhints.io/js-fetch
 
+/*
 const getUrl = 'http://localhost:9090/api/ping';
 fetch(getUrl).then(response => response.json()).then(data => console.log(data));
+*/
 
 const Homepage = (props) => {
   return (

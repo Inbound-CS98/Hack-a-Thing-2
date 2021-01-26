@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 
 import * as style from './AComponent.scss';
 
@@ -29,16 +30,16 @@ const TestButton = (props) => {
       <button type="button"
         onClick={() => {
           setIsClicked(false);
-          fetch(postUrl, {
+          axios(postUrl, {
             method: 'POST',
             headers: {
               Accept: 'application/json',
               'Content-Type': 'application/json;charset=UTF-8',
             },
-            body: JSON.stringify({
+            data: {
               msg: 'hello there',
-            }),
-          }).then(response => response.json()).then(data => console.log(data));
+            },
+          }).then(response => console.log(response.data.turn));
         }}
       >
         {isClicked ? 'hey bro click me right here' : 'hey thanks man i appreciate it'}
