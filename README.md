@@ -3,6 +3,8 @@
 
 Link to live site: http://inbound-cs98-hack-a-thing-2.surge.sh
 
+Parts of this repository were based on the original CS52 starterpack from 19S.
+
 ## Installation
 
 - To install, run `yarn`
