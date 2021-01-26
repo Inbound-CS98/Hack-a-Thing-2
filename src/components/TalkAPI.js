@@ -5,7 +5,7 @@ import * as style from './AComponent.scss';
 
 // test comment
 
-const postUrl = 'http://localhost:9090/post';
+const postUrl = 'https://inbound-cs98-hack-a-thing-2.herokuapp.com/api/post';
 /*
 fetch(postUrl, {
   method: 'POST',
@@ -52,8 +52,6 @@ const TalkAPI = () => {
   return (
     <>
       <TestButton name="FIRST-BUTTON" />
-      <TestButton name="SECOND-BUTTON" />
-      <TestButton name="Phillip" />
     </>
   );
 };
