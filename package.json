@@ -9,7 +9,7 @@
     "rimraf": "./node_modules/rimraf/bin.js",
     "webpack": "./node_modules/webpack/bin/webpack.js",
     "start": "NODE_ENV=development webpack-dev-server",
-    "test": "eslint src/**.js && jest",
+    "test": "eslint src/**.js && jest && sh ./scripts/check_file_exists.sh package-lock.json",
     "build": "yarn clean; NODE_ENV=production webpack --colors",
     "clean": "rimraf dist",
     "deploy": "yarn build; surge -p dist -d inbound-cs98-hack-a-thing-2.surge.sh; yarn clean"
