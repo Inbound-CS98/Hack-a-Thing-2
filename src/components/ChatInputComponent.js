@@ -1,4 +1,7 @@
 import React from 'react';
+import axios from 'axios';
+
+const postUrl = 'https://inbound-cs98-hack-a-thing-2.herokuapp.com/api/receiveMsg';
 
 class InputView extends React.Component {
   constructor(props) {
@@ -17,6 +20,15 @@ class InputView extends React.Component {
     // eslint-disable-next-line no-alert
     alert(`User input: ${this.state.value}`);
     event.preventDefault();
+    axios.post(postUrl, {
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json;charset=UTF-8',
+      },
+      data: {
+        msg: `${this.state.value}`,
+      },
+    }).then(response => console.log(response.data.turn));
   }
 
 
