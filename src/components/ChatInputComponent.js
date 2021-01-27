@@ -40,7 +40,7 @@ class MessageView extends React.Component {
     for (let i = this.state.userInputs.length - 1; i >= 0; i -= 1) {
       messages.push(<span className={style.input} key={`input${i}`}>{this.state.userInputs[i]}</span>);
       if (i < this.state.serverOutputs.length) {
-        messages.push(<span className={style.output} key={`output${i}`}>{this.state.userInputs[i]}</span>);
+        messages.push(<span className={style.output} key={`output${i}`}>{this.state.serverOutputs[i]}</span>);
         messages.push(<span className={style.moreSpace} key={`space${i}`} />);
       } else {
         messages.push(<span className={style.moreSpace} key={`space${i}`} />);
